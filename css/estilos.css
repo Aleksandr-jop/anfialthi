@@ -1,0 +1,123 @@
+body {  
+    font-family: Arial, sans-serif; /* Устанавливаем шрифт Arial, если он недоступен, используется любой sans-serif */
+    margin: 0;
+    padding: 0; /* Убираем внутренние отступы */      
+}  
+
+header {
+    position: sticky;
+    top: 0px;
+    display: flex; /* Используем flexbox для расположения элементов */
+    align-items: center; /* Центрируем элементы вертикально */  
+    background-color: #4164da; /* Синий фон для шапки */
+    text-align: center; /* Выравниваем текст по центру */
+}
+
+.header-logo {
+    width: 5%; /* Устанавливаем ширину изображения */
+    height: auto; /* Автоматически рассчитываем высоту для сохранения пропорций */
+    margin-left: 20px;
+}
+
+.header-content {
+    text-align: center; /* Центрируем содержимое */
+    flex-grow: 1; /* Занимаем оставшееся пространство */
+    margin-right: 70px;
+}
+
+h1 {
+    margin: 0 0 10px; /* Убираем отступы сверху и добавляем отступ снизу */
+    font-family: "Tagesschrift", system-ui;
+    font-size: 3em; /* Увеличиваем размер шрифта */
+    font-weight: bold; /* Делаем заголовок жирным для акцента */
+    color: #c8ff00; /* Жёлтый цвет текста */
+
+}
+
+h2 {
+    text-align: center;
+}
+
+nav ul {
+    font-size: small;
+    color: #edf1ed; /* Цвет текста */
+    list-style-type: none; /* Убираем маркеры у списка */
+    padding: 0; /* Убираем внутренние отступы */
+    margin: 0; /* Убираем внешние отступы */
+    display: flex; /* Выстраиваем ссылки в строку */
+    justify-content: center; /* Центрируем ссылки по горизонтали */
+    gap: 15px; /* Расстояние между пунктами меню */
+
+}
+
+nav ul li {  
+    display: inline; /* Элементы списка располагаются в одну строку */
+    margin: 0 20px; /* Добавляем отступы между пунктами меню */
+    padding-bottom: 10px;
+}
+
+nav ul li a {  
+    text-decoration: underline; /* Ссылки подчёркнуты по умолчанию */
+    color: #b2df0f; /* Цвет текста */
+    transition: text-decoration 0.3s; /* Плавное изменение подчёркивания */
+}
+
+nav ul li a:hover { 
+    color: #edf1ed; /* Зелёный цвет при наведении */ 
+    text-decoration: none; /* При наведении убираем подчёркивание */
+}
+
+main {
+    margin: 10px;
+}
+
+.tetinanegra {
+    display: flex;
+    justify-content: center; /* Центрирует таблицу по горизонтали */
+    align-items: flex-start; /* Смещаем вверх */
+    height: 500px; /* Высота контейнера */
+    padding-top: 50px; /* Регулируем отступ сверху */
+}
+
+.tetinanegra img {
+    width: 300px; /* Увеличиваем ширину */
+    height: auto; /* Сохраняем пропорции */
+    transition: transform 0.3s ease-in-out; /* Плавный эффект */
+}
+
+.product-grid {
+    display: grid; /* Используем CSS Grid для размещения элементов */
+    grid-template-columns: repeat(3, 1fr); /* Создаём 3 колонки равной ширины */
+    gap: 20px; /* Задаём расстояние между элементами */
+    text-align: center; /* Центрируем текст внутри .product-grid */
+}
+
+figure {
+    display: flex; /* Используем Flexbox для расположения элементов */
+    flex-direction: column; /* Выстраиваем изображение и подпись вертикально */
+    align-items: center; /* Центрируем содержимое */
+}
+
+figure img {
+    width: 300px; /* Фиксируем ширину изображения */
+    height: 300px; /* Фиксируем высоту изображения */
+    object-fit: cover; /* Заполняем контейнер изображением, обрезая лишнее */
+}
+
+.product-grid img:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.05); /* Увеличение на 5% */  
+}
+
+figcaption {
+    margin-top: 10px; /* Добавляем отступ между изображением и подписью */
+    font-size: 16px; /* Устанавливаем размер шрифта подписи */
+    color: #333; /* Задаём тёмно-серый цвет текста для читаемости */
+}
+
+footer {  
+    text-align: center; /* Центрируем текст */
+    padding: 10px; /* Добавляем отступ внутри футера */
+    background-color: #4164da; /* Синий фон */
+    color: #ecf0f1; /* Цвет текста */
+}
